@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guns N' Roses - Página Responsiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            background-color: #000000;
+            color: rgb(255, 247, 0);
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        section.content {
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        /* Estilos para botões e links */
+        button.cta {
+            background-color: #f76c6c;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button.cta:hover {
+            background-color: #f44336;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Imagem responsiva */
+        .responsive-image {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Media Queries */
+        /* Para telas menores que 600px */
+        @media (max-width: 599px) {
+            body {
+                color: white;
+                background-color: rgb(0, 0, 0);
+                font-size: 14px;
+            }
+
+            button.cta {
+                color: yellow;
+                background-color: #ff0000;
+            }
+
+            a {
+                color: #a23056;
+            }
+
+            section.content {
+                flex-direction: column;
+            }
+
+            .band-image {
+                display: none;
+            }
+        }
+
+        /* Para telas entre 600px e 900px */
+        @media (min-width: 600px) and (max-width: 899px) {
+            body {
+                color: yellow;
+                background-color: rgb(255, 0, 0);
+                font-size: 16px;
+            }
+
+            button.cta {
+                background-color: #090909;
+            }
+
+            a {
+                color: #00BCD4;
+            }
+
+            section.content {
+                flex-direction: column;
+            }
+
+            .band-image {
+                display: block;
+            }
+        }
+
+        /* Para telas maiores que 900px */
+        @media (min-width: 900px) {
+            body {
+                background-color: purple;
+                font-size: 18px;
+            }
+
+            button.cta {
+                background-color: #9c27b0;
+            }
+
+            a {
+                color: #8e24aa;
+            }
+
+            section.content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+            }
+
+            .band-image {
+                display: block;
+            }
+        }
+
+        a.link{
+          background-color: yellow;
+          color: black;
+          text-align: center;
+          text-decoration: none;
+          font-size: 0.7em;
+          font-weight: bolder;
+          margin: 20px 10px;
+          padding: 10px;
+          width: 150px;
+          border-radius: 30px;
+        }
+
+        a.link:hover{
+          background-color: #820d0d;
+          color: white;
+          transition: 0.5s;
+          transform: scale(1.06);
+        }
+
+       #conteiner{
+        display: block;
+        margin: auto;
+        margin: 40px;
+        text-align: center;          
+        
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guns N' Roses</h1>
+        <p>Uma das bandas de hard rock mais influente e bem-sucedida da história da música.</p>
+    </header>
+    <section class="content">
+        <p>Guns N' Roses é uma das bandas de rock mais icônicas de todos os tempos, conhecida pelos seus grandes sucessos e performances energéticas.</p>
+        <a href="http://www.gunsnroses.com/" target="_blank"><input type="button" value="Saiba mais!"></a>
+    </section>
+
+    <img class="band-image" src="https://1.bp.blogspot.com/-SsYLmgMm-cQ/XWwW1nqw7eI/AAAAAAAAPgU/dxFzdoYVxjka3BDIXwy60PNrhP-0zjoqwCLcBGAs/s1600/gunsnroseslogo.jpg" alt="Guns N' Roses" style="width: 479px; height: 479px;"/>
+
+    <div id="conteiner">
+        <a class="link" href="Desafio 7.html" real="prev" target="_self">Clique - desafio 7 ⏭️</a>
+        <a class="link" href="Desafio 5.html" real="prev" target="_self">Desafio anterior ◀️</a>
+      </div>
+</body>
+</html>

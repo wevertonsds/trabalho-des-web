@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Musical</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body, html{
+            background-color: black
+        }
+
+        caption{
+            color: white;
+            font-size: 2em;
+        }
+        table{
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        table, th, td{
+            border: 1px solid white;
+            width: 100vw;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        th{
+            padding: 10px;
+            color: red;
+        }
+
+        td{
+            padding: 10px;
+            color: white;
+
+        }
+
+        td:hover{
+            background-color: #a9a9a92f;
+            color: yellow;
+            cursor: pointer;
+            transform: scale(1.02);
+        }
+
+        tr.atuais:hover{
+            background-image: linear-gradient( to right, Black , yellow, blue);
+                
+        }
+
+        td.atuais:hover{
+            color: white;
+            font-weight: bolder;
+            color: black
+        }
+
+        a.link{
+          background-color: yellow;
+          color: black;
+          text-align: center;
+          text-decoration: none;
+          font-size: 0.7em;
+          font-weight: bolder;
+          margin: 20px 10px;
+          padding: 10px;
+          width: 150px;
+          border-radius: 30px;
+        }
+
+        a.link:hover{
+          background-color: #820d0d;
+          color: white;
+          transition: 0.5s;
+          transform: scale(1.06);
+        }
+
+       #conteiner{
+        display: block;
+        margin: auto;
+        margin: 40px;
+        text-align: center;          
+        
+       }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Álbuns Guns N' Roses</caption>
+        <thead>
+            <tr>
+                <th>Nome do artista</th>
+                <th>Nome do álbum</th>
+                <th>Ano de lançamento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Guns N' Roses</td>
+                <td>Appetite for Destruction</td>
+                <td>1987</td>
+            </tr>
+
+            <tbody>
+                <tr>
+                    <td>Guns N' Roses</td>    
+                    <td>Use Your Illusion I</td>        
+                    <td>1991</td>    
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <td>Guns N' Roses</td>    
+                    <td>Chinese Democracy</td>        
+                    <td>2008</td>    
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr class="atuais">
+                    <td  class="atuais">Guns N' Roses</td>    
+                    <td class="atuais">Nothing Lasts Forever</td>        
+                    <td  class="atuais">2021</td>    
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr class="atuais">
+                    <td  class="atuais">Guns N' Roses</td>    
+                    <td  class="atuais">Take Me Down</td>        
+                    <td  class="atuais">2024</td>    
+                </tr>
+            </tbody>
+        </tbody>
+    </table>
+    <div id="conteiner">
+        <a class="link" href="index.html" real="prev" target="_self">Página inicial 🏠</a>
+        <a class="link" href="Desafio 7.html" real="prev" target="_self">Desafio anterior ◀️</a>
+      </div>
+</body>
+</html>

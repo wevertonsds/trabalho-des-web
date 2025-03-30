@@ -100,9 +100,26 @@
                transition: border 0.5s;
                transform: scale(1.05);
             }
-            footer {
+             a#next{
+                color: black;
+                background-color: yellow;
+                font-size: 0.7em;
                 text-align: center;
-                border: 1px solid white;
+                text-decoration: none;
+                border-radius: 10px;
+                padding: 10px;
+                font-weight: bolder;
+            }
+
+            a#next:hover{
+                color: black;
+                background-color: aquamarine;
+                transition: 0.5s;
+            }
+
+            p{
+                text-align: center;
+                transform: scale(1.03);
             }
         </style>
     </head>
@@ -146,8 +163,6 @@
         <button id="btn" onclick="window.open('https://www.youtube.com/watch?v=8SbUC-UaAxE', '_blank')">Ouvir Agora</button>
 
 </div>
-    <footer>
-        <a href="Desafio 3.html" real="next" target="_self">Clique aqui para ir ao desafio 3</a>
-    </footer>
+    <p><a id="next" href="Desafio 3.html" real="next" target="_self">Clique - desafio 3 ⏭️</a></p>
     </body>
 </html>
