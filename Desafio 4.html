@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Capas</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .album {
+            text-align: center;
+            width: 150px;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+        .album:hover {
+            transform: translateY(-5px);
+        }
+        .album-name {
+            margin-top: 10px;
+            transition: color 0.2s ease;
+        }
+        .album:hover .album-name {
+            color: #ff0000;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="album">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.Tn_M0Kk4dTDYiMhWWdQu5AHaHa&pid=Api" alt="Appetite for Destruction">
+        <p class="album-name">Appetite for Destruction (1987)</p>
+      </div>
+      <div class="album">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.ngncIbiZ1pNRf8Gl3HCRVQHaHa&pid=Api" alt="G N' R Lies">
+        <p class="album-name">G N' R Lies (1988)</p>
+      </div>
+      <div class="album">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.j8Op5py6oEAqzgOKPHXqggHaHZ&pid=Api" alt="Use Your Illusion I">
+        <p class="album-name">Use Your Illusion I (1991)</p>
+      </div>
+      <div class="album">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.zIFPnw-AZgw1fv83ki1HjwHaHa&pid=Api" alt="Use Your Illusion II">
+        <p class="album-name">Use Your Illusion II (1991)</p>
+      </div>
+      <div class="album">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.4yG_4SF_7t1PdfriSsETNwHaHa&pid=Api" alt="Chinese Democracy">
+        <p class="album-name">Chinese Democracy (2008)</p>
+      </div>
+    </div>
+
+    <a href="Desafio 3.html" real="prev" target="_self">Clique aqui para voltar ao desafio 3</a>
+  </body>
+</html>
